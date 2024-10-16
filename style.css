@@ -1,7 +1,7 @@
 /* General styling */
 body {
     background: linear-gradient(135deg, #c7a73c, rgba(17, 0, 255, 0.733));
-    color: #333333; /* Dark text color */
+    color: #333333; 
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -11,9 +11,9 @@ body {
     padding: 0;
 }
 
-/* Container styling remains the same */
+
 .container {
-    background: #ffffff; /* White background for the container */
+    background: #ffffff; 
     border-radius: 15px;
     padding: 30px;
     max-width: 700px;
