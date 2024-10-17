@@ -2,7 +2,6 @@ const quizContainer = document.getElementById('quiz-container');
 const questionElement = document.getElementById('question');
 const choicesContainer = document.getElementById('choices');
 const nextButton = document.getElementById('next-btn');
-const previousButton = document.getElementById('previous-btn');
 const resultContainer = document.getElementById('result');
 const progressBar = document.getElementById('progress-bar');
 
@@ -42,8 +41,7 @@ function displayQuestion() {
         choicesContainer.appendChild(button);
     });
 
-    // Show or hide the previous button
-    previousButton.style.display = currentQuestionIndex === 0 ? 'none' : 'inline-block';
+    
 }
 
 // Decode HTML entities from the API
@@ -90,13 +88,6 @@ nextButton.addEventListener('click', () => {
     }
 });
 
-// Show the previous question
-previousButton.addEventListener('click', () => {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        displayQuestion();
-    }
-});
 
 // Display the final result
 function showResult() {
